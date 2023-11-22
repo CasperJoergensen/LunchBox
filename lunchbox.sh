@@ -171,7 +171,7 @@ alias locserver='python -m SimpleHTTPServer 8005'
 
 
 ### DS
-PATH_DS='/c/Projects/ds/develop'
+PATH_DS='/c/Projects/danskespil.website/develop'
 alias ds='cd $PATH_DS'
 alias dlo='ds && cd Scripts && cd Local && powershell ./SwitchDliDloContext.ps1 -destinationContext dlo && ds'
 alias dli='ds && cd Scripts && cd Local && powershell ./SwitchDliDloContext.ps1 -destinationContext dli && ds && git checkout -- Website/Components/DanskeSpil/Framework/PlayerAccountManagement/Include/zzz.DanskeSpil.Framework.PlayerAccountManagement_local.config'
