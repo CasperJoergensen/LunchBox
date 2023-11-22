@@ -4,7 +4,7 @@ REP="/Users/mlp/_rep"
 
 if [[ $(uname -s) != Darwin ]]; then # Windows
   # Overwrite default OSX paths
-  LUNCHBOX="/c/Projects/rep/Lunchbox"
+  LUNCHBOX="/c/Projects/Lunchbox"
   REP="/c/Projects/rep"
 
   # Pretty output in Windows like on OSX
