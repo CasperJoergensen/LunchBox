@@ -231,7 +231,7 @@ alias yesterday='ds;echo " Since early morning yesterday:"; git log --committer=
 alias myremotebranches='git for-each-ref --format=" %09 %(authordate:short) %09 %(authorname) %09 git push origin --delete %(refname)" --sort=-authordate | grep Michael | grep refs/remotes | grep -n " " | sed "s@refs/remotes/origin/@@g" | sed "s@Lothar@L@g"'
 alias gitup='git fetch origin ; git branch -v -a'
 alias gitlatestrels='git fetch --dry-run --quiet && git for-each-ref | grep -E ".*release/DS-[0-9]{3}.*" | sed "s@.*.commit.refs/remotes/origin/release/@@g" | tail -5'
-alias w='node ./node_modules/gulp/bin/gulp.js --color watch'
+alias w='gulp --color watch'
 alias g='node ./node_modules/gulp/bin/gulp.js --color'
 alias gw='node ./node_modules/gulp/bin/gulp.js --color && node ./node_modules/gulp/bin/gulp.js --color watch'
 alias gl='node ./node_modules/gulp/bin/gulp.js --color lint && node ./node_modules/gulp/bin/gulp.js --color stylelint'
