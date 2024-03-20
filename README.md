@@ -9,5 +9,5 @@ source /Users/mlp/Lunchbox/lunchbox.sh
 or (Windows):
 
 ```bash
-source /c/Projects/rep/Lunchbox/lunchbox.sh
+source /c/Projects/Lunchbox/lunchbox.sh
 ```

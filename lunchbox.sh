@@ -1,11 +1,11 @@
 # Default OSX paths
-LUNCHBOX="/Users/mlp/_rep/Lunchbox"
+LUNCHBOX="/Projects/Lunchbox"
 REP="/Users/mlp/_rep"
 
 if [[ $(uname -s) != Darwin ]]; then # Windows
   # Overwrite default OSX paths
   LUNCHBOX="/c/Projects/Lunchbox"
-  REP="/c/Projects/rep"
+  REP="/c/Projects"
 
   # Pretty output in Windows like on OSX
   alias ll='ls -lhF --color --group-directories-first'
@@ -89,7 +89,7 @@ alias rep="cd $REP"
 brows_sync() {
   # https://browsersync.io/docs/command-line
   cd $PATH_DS
-  browser-sync start --proxy 'https://web.develop.danskespil.dk' --files './Website/BuildArtifacts/Components/DanskeSpil/**/*.css' './Website/BuildArtifacts/Components/DanskeSpil/**/*.js' './Website/BuildArtifacts/Components/Shared/Framework/Ensighten/**/*.js' --no-notify --open external --no-ghost-mode --no-ui
+  browser-sync start --proxy 'https://web.develop.danskespil.dk' --files './Website/BuildArtifacts/Components/DanskeSpil/**/*.css' './Website/BuildArtifacts/Components/DanskeSpil/**/*.cshtml' './Website/BuildArtifacts/Components/DanskeSpil/**/*.js' './Website/BuildArtifacts/Components/Shared/Framework/Ensighten/**/*.js' --no-notify --open external --no-ghost-mode --no-ui
 }
 alias bs='brows_sync'
 
