@@ -74,7 +74,7 @@ up_ass() {
 alias upass='up_ass'
 
 # Quick edit this page
-alias vial='code $LUNCHBOX/lunchbox.sh'
+alias vial='nano $LUNCHBOX/lunchbox.sh'
 
 # Shortcuts
 alias c='clear'
