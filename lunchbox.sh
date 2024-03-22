@@ -89,7 +89,7 @@ alias rep="cd $REP"
 brows_sync() {
   # https://browsersync.io/docs/command-line
   cd $PATH_DS
-  browser-sync start --proxy 'https://web.develop.danskespil.dk' --files './Website/BuildArtifacts/Components/DanskeSpil/**/*.css' './Website/Views/**/*.cshtml' './Website/BuildArtifacts/Components/DanskeSpil/**/*.js' './Website/BuildArtifacts/Components/Shared/Framework/Ensighten/**/*.js' --no-notify --open external --no-ghost-mode --no-ui | while IFS= read -r line; do echo "$(date '+%Y-%m-%d %H:%M:%S') - $line"; done
+  browser-sync start --proxy 'https://web.develop.danskespil.dk' --files './Website/BuildArtifacts/Components/DanskeSpil/**/*.css' './Website/Views/**/*.cshtml' './Website/BuildArtifacts/Components/DanskeSpil/**/*.js' './Website/BuildArtifacts/Components/Shared/Framework/Ensighten/**/*.js' --no-notify --open external --no-ghost-mode --no-ui | while IFS= read -r line; do echo "$(date '+%H:%M:%S') - $line"; done
 }
 alias bs='brows_sync'
 
